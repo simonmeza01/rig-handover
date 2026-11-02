@@ -28,7 +28,27 @@ Read first: `docs/vision.md`, `docs/styleguide.md`. Decisions: `docs/adr/`.
    ```
 
 5. An issue is closed only when its "Done when" holds. If it can't hold yet, leave it open and
-   say what it waits on.
+   say what it waits on. An issue that waits on someone outside the lane (a reviewer, a host)
+   stays open until they have acted, not until we have sent.
+
+## Issue shape
+
+Every issue split from a plan carries, in this order:
+
+```
+Source: plan.md § <n>
+
+## Scope
+<what to change, which files, what not to touch>
+
+## Done when
+<the plan's checkable condition>
+
+## Blocked by
+<#n, … or —; name any outside wait, e.g. "the reviewer's review being in">
+```
+
+Label: `plan:<plan name>` (e.g. `plan:morning-digest`). Title: short, what the issue delivers.
 
 ## Skills
 
